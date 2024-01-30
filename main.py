@@ -4,10 +4,6 @@ import os
 import time
 
 
-def user_input():
-    return input("Choose Operation: ").strip()
-
-
 def clear_console():
     time.sleep(2)
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -58,10 +54,8 @@ while True:
     3) Quit
     """)
 
-    user_input = input("Choose Operation: ").strip()
-
     try:
-        option = int(user_input)
+        option = int(input("Choose operation: ").strip())
         if option == 1:
             clear_console()
             word1 = input("Add word in german: ")
