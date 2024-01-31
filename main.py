@@ -44,7 +44,7 @@ def learn(r):
 
             clear_console()
 
-        print(f"You got {counter}/{r} vocabularies right!")
+        print(f"You got {counter}/{r} words right!")
 
 
 while True:
